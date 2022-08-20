@@ -1,0 +1,69 @@
+baseURL: https://www.weixu.fun
+languageCode: en-us
+title: Wei XU
+theme: "PaperMod"
+
+params:
+  homeInfoParams:
+    Title: Welcome to My Personal Site 😎
+    Content: >
+      I am a Ph.D. student in the Department of Economics at Chinese University of Hong Kong.
+      
+      - I received both my Bachelor’s and Master’s Degree from Central University of Finance and Economics.
+  
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/weixu94"
+    # - name: "youtube"
+    #   url: "https://www.youtube.com/channel/XXX"
+    - name: "twitter"
+      url: "https://twitter.com/WeiXu94"
+    # - name: "kofi"
+    #   url: "https://buymeacoffee.com/XXX"
+    - name: "rss"
+      url: "/index.xml/"
+    - name: "email"
+      url: "mailto:weixu@link.cuhk.edu.hk"
+  ShowReadingTime: true
+  author: "Wei XU"
+  contact: "weixu@link.cuhk.edu.hk"
+  feedlinks: true
+  mobileMenu: true
+  assets:
+    favicon: "/static/favicon.ico"
+    favicon16x16:  "/static/favicon-16x16.png"
+    favicon32x32:  "/static/favicon-32x32.png"
+    apple_touch_icon:  "/static/apple-touch-icon.png"
+    safari_pinned_tab:  "/static/safari-pinned-tab.svg"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+  section:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 20
+    - identifier: teaching
+      name: Teaching
+      url: /teaching/
+      weight: 20
+    - identifier: hiking
+      name: Hiking
+      url: https://hiking-six.vercel.app/

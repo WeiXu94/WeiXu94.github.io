@@ -1,11 +1,9 @@
 ---
 title: Hack Stata DTA file
 date: 2022-02-08
-slug: hack-dta
-category: Record
-tags:
-categories: Record
-lastMod: 2022-08-20
+# lastMod: 2022-08-20
+tags: ["stata"]
+summary: The structure of stata DTA format.
 ---
 dta 文件里面到底什么样子？首先 vscode 里面打开看一下：
 

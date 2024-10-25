@@ -12,6 +12,9 @@ taxonomies:
 
 menu:
   main:
+    - name: About
+      url: /about/
+      weight: 20
     - identifier: research
       name: Research
       url: /research/
@@ -24,9 +27,13 @@ menu:
       name: Blog
       url: /blog/
       weight: 100
-    - identifier: hiking
-      name: Hiking
-      url: https://hiking-six.vercel.app/
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 100
+    # - identifier: hiking
+    #   name: Hiking
+    #   url: https://hiking-six.vercel.app/
 
 params:
   description: "Wei XU's personal website"
@@ -52,24 +59,27 @@ params:
   comments: false
   math: true
   profileMode:
-      enabled: true
-      title: Wei XU
-      subtitle: "I am a PhD student in the Department of Economics at Chinese University of Hong Kong.I received both my Bachelor and Master Degree from Central University of Finance and Economics."
-      imageUrl: "/me.jpg"
-      imageWidth: 160
-      imageHeight: 160
-      imageTitle: Wei XU
-      buttons:
-        - name: CV
-          url: /CV_XW.pdf
-        - name: Research
-          url: /research/
-        # - name: Courses
-        #   url: /courses/
-        - name: Teaching
-          url: /teaching/
-        - name: Blog
-          url: /blog/
+    enabled: true
+    title: Wei XU
+    subtitle: "I am a PhD student in the Department of Economics 
+      at Chinese University of Hong Kong.
+      I received both my Bachelor and Master Degree from 
+      Central University of Finance and Economics. [And more](/about/)"
+    imageUrl: "/me.jpg"
+    imageWidth: 160
+    imageHeight: 160
+    imageTitle: Wei XU
+    buttons:
+      - name: CV
+        url: /CV_XW.pdf
+      - name: Research
+        url: /research/
+      - name: Teaching
+        url: /teaching/
+      - name: Blog
+        url: /blog/
+      - name: Tags
+        url: /tags/
 
   socialIcons: # optional
     - name: "github"
@@ -80,24 +90,24 @@ params:
       url: mailto:weixu@link.cuhk.edu.hk
   
   assets:
-      disableHLJS: true
-      disableScrollBarStyle: true
+    disableHLJS: true
+    disableScrollBarStyle: true
   cover:
-      hiddenInList: true
-      hiddenInSingle: true
+    hiddenInList: true
+    hiddenInSingle: true
   label:
     text: "Wei XU"
     icon: /favicon.ico
     iconHeight: 18
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        guessSyntax: true
-        style: autumn 
-    tableOfContents:
-        endLevel: 2
-        ordered: false
-        startLevel: 2
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: autumn 
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2

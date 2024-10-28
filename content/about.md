@@ -10,3 +10,5 @@ which sold widely in taobao previouly, and WuSong who is said to be from my home
 
 I spent my first 18 years in my hometown, and then 7 years in Beijing (CUFE), 
 and then another 7 years till 2026 in HongKong (CUHK), really a long journey.
+
+You can reach me via email for anything you want to talk or share.

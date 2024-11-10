@@ -1,8 +1,8 @@
 ---
 title: Only Apple can do
 date: 2024-10-21
-slug: 
-categories:
+tags: ["Apple","OS","software"]
+summary: "The unified experience under Apple ecosystem."
 ---
 ## hardware
 

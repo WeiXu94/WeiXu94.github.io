@@ -40,7 +40,7 @@ params:
   description: "Wei XU's personal website"
   author: Wei XU
   social: true
-  googleAnalyticsID: "G-97G4MZ4061"
+  # googleAnalyticsID: "G-97G4MZ4061"
   DateFormat: "2006-01-02"
   defaultTheme: auto
   hideFooter: true

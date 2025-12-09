@@ -1,16 +1,16 @@
 ---
 title: 鳗鱼的秘密
 date: 2021-12-28
-summary: "We cannot see the life of fish"
-slug: eel-secret
-tag: ["reading"]
-lastMod: 2022-08-20
+tags:
+  - reading
+summary: We cannot see the life of fish
 ---
+
 你知道鳗鱼怎么繁殖，在哪里繁殖，什么时候繁殖吗？
 
 这几个看似简单的问题却在很长时间内是科学界的一个谜。
 
-前几天看了一篇文章[《城读│鳗鱼问题：人类对知识与意义难以遏制的渴求》](https://mp.weixin.qq.com/s?__biz=MzA3ODA2NTM3NA==&mid=2667881143&idx=1&sn=5c1044a4337e6f8bc4550c1e32d9f19b&scene=21#wechat_redirect)里面讲到了鳗鱼问题 - 数百年来，一代代科学家花费了大量精力去寻找鳗鱼从哪来，到哪去，它们又是怎么进化交配的。但至今鳗鱼身上仍有很多谜团尚未解开。
+前几天看了一篇文章 [《城读│鳗鱼问题：人类对知识与意义难以遏制的渴求》](https://mp.weixin.qq.com/s?__biz=MzA3ODA2NTM3NA==&mid=2667881143&idx=1&sn=5c1044a4337e6f8bc4550c1e32d9f19b&scene=21#wechat_redirect) 里面讲到了鳗鱼问题 - 数百年来，一代代科学家花费了大量精力去寻找鳗鱼从哪来，到哪去，它们又是怎么进化交配的。但至今鳗鱼身上仍有很多谜团尚未解开。
 
 文章里面提到了美国海洋生物学家蕾切尔·卡森的一句话，让我印象很深：
 

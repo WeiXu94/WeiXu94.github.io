@@ -1,11 +1,12 @@
 ---
 title: 地球的一生
 date: 2022-02-08
-lastMod: 2022-08-20
-slug: earth-life
-tags: ["earth", "life"]
-summary: "We are living at the peak period of earth!"
+tags:
+  - earth
+  - life
+summary: We are living at the peak period of earth!
 ---
+
 偶然在 YouTube 上看到了一个名为《老高与小茉》的频道，结果一发不可收拾地看上了瘾，疯狂刷了一天。
 
 这个频道主要讲得是关于科幻，天文，宇宙和 IT 等方面的内容。

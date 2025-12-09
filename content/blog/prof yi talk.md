@@ -1,0 +1,34 @@
+---
+title: 记易老师谈话
+date: 2021-12-28
+tags:
+  - talk
+summary: One talk
+---
+
+昨天听了易老师在 study group 里的一番谈话，受益匪浅，这里来总结一下。
+
+1. Answer fisrt-order questions.
+    - 从过往文献和实证观察的基础上发现好问题。
+    - 牛顿提出万有引力，最符合之前观察的理论
+    - 三朵乌云 爱因斯坦提出了相对论（theory），能够解释牛顿力学不能解释的现象。但却一直得到实证的检验
+    - 这样看，经济学其实继承了物理学的科学研究范式（combination of theory and empirical evidence）。
+    - 经济学上的例子，凯恩斯的通论也是一套理论，为了解释为什么会发生大危机。
+    - 我们的研究无非两种，一是发掘新理论去解释现实问题，二是用实证观察去检验现有理论是否正确。
+
+2. Data is crucial and big data is the future.
+    - 这是一个信息爆炸的时代。
+    - 有句话让我很受触动，
+    - 我们学者不像业界的人，手上没有任何筹码，只能以诚服人。
+
+3. Economic intuition
+    - 让经济学基本概念深入骨髓 -demand, supply, elasicity...
+    - 就像做高考数学题，一眼扫过题目，心中就有了思路。
+
+4. Writing, writing, and writing!!!
+
+5. Who is your reader?
+    - 我个人感觉，这是从发表文章的功利角度来谈的。一篇学术文章往往是曲高和寡，会读你文章的人很可能只有几十个人。想明白你的读者们在思考什么问题。
+    - 易老师又讲了两人人物 - 苏轼和韩愈：
+    - 韩愈除了千古名篇之外，还写了很多吹捧拍马屁的文章。苏轼呢，一生潇洒豁达，但也多亏了弟弟苏洵为他打理左右。
+    - 经济学只有两个方程：choice function and production function。

@@ -1,11 +1,12 @@
 ---
 title: 王者荣耀背后的计算机原理
 date: 2022-02-08
-summary: "Behind Honor of King" 
-slug: behind-hok
-tags: ["game","CS"]
-lastMod: 2022-08-20
+tags:
+  - game
+  - CS
+summary: Behind Honor of King
 ---
+
 昨天玩王者荣耀又被队友气到了，索性直接退了游戏。
 
 Google 了一下，王者荣耀的前端 APP 的开发语言是 c#，游戏引擎是 Unity。c#和 Unity 的关系类似于 Python 和 QGIS，我们可以用 QGIS 中封装好的工具画图计算，也可以自己写 Python 脚本之后交给 QGIS 执行。后端数据库则是用 C++ 写的（据说这是鹅厂的后端传统，都用 C++）。
@@ -20,9 +21,9 @@ Google 了一下，王者荣耀的前端 APP 的开发语言是 c#，游戏引�
 
 ## 算法
 
-我们点击排位按钮，进入了游戏队列，这时需要游戏系统给我们匹配九个队友。具体怎么匹配呢？这时需要一个匹配算法。大家应该都知道，每个游戏玩家背后都有一个 elo（wiki 解释：[Elo rating system](https://zh.wikipedia.org/wiki/%E7%AD%89%E7%BA%A7%E5%88%86)）隐藏分。知乎上有个[问题](https://www.zhihu.com/question/341453743)对此有比较好的解释。简而言之，腾讯会根据每个玩家的游戏表现、活跃程度和历史战绩等计算一个 elo 等级，并且根据这个值进行游戏匹配。
+我们点击排位按钮，进入了游戏队列，这时需要游戏系统给我们匹配九个队友。具体怎么匹配呢？这时需要一个匹配算法。大家应该都知道，每个游戏玩家背后都有一个 elo（wiki 解释：[Elo rating system](https://zh.wikipedia.org/wiki/%E7%AD%89%E7%BA%A7%E5%88%86)）隐藏分。知乎上有个 [问题](https://www.zhihu.com/question/341453743) 对此有比较好的解释。简而言之，腾讯会根据每个玩家的游戏表现、活跃程度和历史战绩等计算一个 elo 等级，并且根据这个值进行游戏匹配。
 
->ELO机制通过调整双方玩家战斗力值的方差对胜负进行干预，而非调整双方玩家战斗力值的均值。
+>ELO 机制通过调整双方玩家战斗力值的方差对胜负进行干预，而非调整双方玩家战斗力值的均值。
 
 ## 类（Class）
 

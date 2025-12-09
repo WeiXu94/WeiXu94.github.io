@@ -15,18 +15,18 @@ menu:
     - name: About
       url: /about/
       weight: 20
-    - identifier: research
-      name: Research
-      url: /research/
-      weight: 20
-    - identifier: teaching
-      name: Teaching
-      url: /teaching/
-      weight: 20
-    - identifier: blog
-      name: Blog
-      url: /blog/
-      weight: 100
+    # - identifier: research
+    #   name: Research
+    #   url: /research/
+    #   weight: 20
+    # - identifier: teaching
+    #   name: Teaching
+    #   url: /teaching/
+    #   weight: 20
+    # - identifier: blog
+    #   name: Blog
+    #   url: /blog/
+    #   weight: 100
     - identifier: tags
       name: Tags
       url: /tags/
@@ -40,10 +40,10 @@ params:
   author: Wei XU
   social: true
   googleAnalyticsID: "G-97G4MZ4061"
-  DateFormat: "January 2006"
-  defaultTheme: light
+  DateFormat: "2006-01-02"
+  defaultTheme: auto
   hideFooter: true
-  disableThemeToggle: true
+  # disableThemeToggle: true
   ShowShareButtons: false
   ShowReadingTime: false
   disableSpecial1stPost: true
@@ -52,7 +52,9 @@ params:
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: false
-  ShowToc: false
+  hideSummary: true
+  hideAuthor: true
+  ShowToc: true
   disableScrollToTop: true
   TocOpen: true
   ShowWordCount: false
@@ -60,12 +62,13 @@ params:
   comments: false
   math: true
   profileMode:
-    enabled: true
+    enabled: false
     title: Wei XU
     subtitle: "I am a PhD student in the Department of Economics 
       at Chinese University of Hong Kong.
       I received both my Bachelor and Master Degree from 
-      Central University of Finance and Economics. [And more](/about/)"
+      Central University of Finance and Economics."
+    # **In 2024/2025, I will be on the academic job market.**
     imageUrl: "/me.jpg"
     imageWidth: 160
     imageHeight: 160
@@ -88,7 +91,7 @@ params:
     - name: "rss"
       url: "/index.xml/"
     - name: "email"
-      url: mailto:weixu@link.cuhk.edu.hk
+      url: mailto:weixu1026@gmail.com
   
   assets:
     disableHLJS: true
@@ -112,3 +115,21 @@ markup:
     endLevel: 2
     ordered: false
     startLevel: 2
+
+enableGitInfo: true
+
+frontmatter:
+  date:
+    - date
+    - publishDate
+    - lastmod
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
+  publishDate:
+    - publishDate
+    - date
+  expiryDate:
+    - expiryDate

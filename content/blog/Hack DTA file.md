@@ -5,9 +5,10 @@ date: 2022-02-08
 tags: ["stata"]
 summary: The structure of stata DTA format.
 ---
+
 dta 文件里面到底什么样子？首先 vscode 里面打开看一下：
 
-![image-20220212172823057.png](./_attachments/1660969676241_0.png)
+![](../../1660969676241_0.png)
 
 之后整理了一下里面可见的文字，大概是下面这种格式：
 

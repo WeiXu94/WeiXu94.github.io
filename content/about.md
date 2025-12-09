@@ -6,7 +6,7 @@ url: /about/
 ---
 
 Born:
-- Qinghe county, Hebei province, China
+- Hebei, China
 
 Education:
 - 2019-2026?, Phd in economics, CUHK

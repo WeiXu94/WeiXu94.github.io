@@ -2,7 +2,8 @@ baseURL: https://weixu94.github.io
 languageCode: en-us
 title: Wei XU
 theme: PaperMod
-paginate: 20
+pagination:
+  pagerSize: 20
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

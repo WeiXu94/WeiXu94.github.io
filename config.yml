@@ -24,17 +24,10 @@ menu:
     #   name: Teaching
     #   url: /teaching/
     #   weight: 20
-    # - identifier: blog
-    #   name: Blog
-    #   url: /blog/
-    #   weight: 100
     - identifier: tags
       name: Tags
       url: /tags/
       weight: 100
-    # - identifier: hiking
-    #   name: Hiking
-    #   url: https://hiking-six.vercel.app/
 
 params:
   description: "Wei XU's personal website"
@@ -56,8 +49,8 @@ params:
   hideSummary: true
   hideAuthor: true
   ShowToc: true
-  disableScrollToTop: true
-  TocOpen: true
+  TocOpen: false
+  disableScrollToTop: false
   ShowWordCount: false
   UseHugoToc: true
   comments: false

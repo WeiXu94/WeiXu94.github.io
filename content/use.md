@@ -9,7 +9,7 @@ Hardwares:
 - AOC 27 4K monitor
 - Xiaomi Band 8 Pro
 - Oppo Ecno X
-- Apple Magic Keyboard 3
+- ~~Apple Magic Keyboard 3~~, back to old logitech M330
 - ipad mini 5 with apple pencil 1 (rarely used now)
 
 Softwares:

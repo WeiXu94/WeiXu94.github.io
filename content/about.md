@@ -1,7 +1,7 @@
 ---
 title: "About me"
 # date: 2024-10-25
-lastmod: 2025-12-09
+lastmod: 2025-12-10
 url: /about/
 ---
 
@@ -16,7 +16,7 @@ Education:
 Work:
 - once do a intern at KPMG in winter when I was an undergraduate
 
-Reach me: [email](mailto:weixu1026@gmail.com), [github](https://github.com/weixu94), [rss](/index.xml/)
+Reach me: [email](mailto:weixu1026@gmail.com), [github](https://github.com/weixu94), [ins](https://www.instagram.com/weixu.david)(for photo sharing), [rss](/index.xml/)
 
 
 What I am doing:
@@ -26,3 +26,4 @@ What I am doing:
 Some links:
 - [What I use](/use)
 - [Some econ Research](/blog/research)
+- [hiking page](https://hiking-six.vercel.app/), no update recently

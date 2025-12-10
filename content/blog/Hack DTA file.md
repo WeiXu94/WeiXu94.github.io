@@ -8,7 +8,7 @@ summary: The structure of stata DTA format.
 
 dta 文件里面到底什么样子？首先 vscode 里面打开看一下：
 
-![](../../1660969676241_0.png)
+![](https://pub-309af738bd93488c82f8bd887dd5c05c.r2.dev/20251210211255726.png)
 
 之后整理了一下里面可见的文字，大概是下面这种格式：
 

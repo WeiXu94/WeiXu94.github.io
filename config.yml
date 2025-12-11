@@ -119,9 +119,9 @@ frontmatter:
     - lastmod
   lastmod:
     - lastmod
-    - :git
-    - date
-    - publishDate
+    # - :git
+    # - date
+    # - publishDate
   publishDate:
     - publishDate
     - date

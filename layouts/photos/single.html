@@ -1,0 +1,95 @@
+{{ define "main" }}
+<style>
+    /* ===============================
+   Base: mobile first
+   =============================== */
+
+    .photo-grid {
+        column-count: 2;
+        /* 手机默认 2 列 */
+        column-gap: 10px;
+        margin-top: 1.5rem;
+    }
+
+    .photo-item {
+        break-inside: avoid;
+        margin-bottom: 10px;
+    }
+
+    .photo-item img {
+        width: 100%;
+        display: block;
+        border-radius: 6px;
+    }
+
+    /* ===============================
+   Tablet
+   =============================== */
+
+    @media (min-width: 640px) {
+        .photo-grid {
+            column-count: 3;
+            column-gap: 12px;
+        }
+
+        .photo-item {
+            margin-bottom: 12px;
+        }
+    }
+
+    /* ===============================
+   Desktop
+   =============================== */
+
+    @media (min-width: 1024px) {
+        .photo-grid {
+            column-count: 4;
+            column-gap: 14px;
+        }
+
+        .photo-item {
+            margin-bottom: 14px;
+        }
+    }
+
+    /* ===============================
+   Future enhancement: Grid Lanes
+   =============================== */
+
+    @supports (display: grid-lanes) {
+        .photo-grid {
+            display: grid-lanes;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            column-count: initial;
+        }
+
+        @media (max-width: 1023px) {
+            .photo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 639px) {
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .photo-item {
+            margin-bottom: 0;
+        }
+    }
+</style>
+<section class="photo-grid">
+    {{ $images := resources.Match "photos/*" }}
+    {{ range $images }}
+    <figure class="photo-item">
+        <a href="{{ .RelPermalink }}" target="_blank">
+            <img src="{{ .RelPermalink }}" loading="lazy" decoding="async" alt="" />
+        </a>
+    </figure>
+    {{ end }}
+</section>
+
+{{ end }}

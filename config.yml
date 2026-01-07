@@ -24,6 +24,10 @@ menu:
     #   name: Teaching
     #   url: /teaching/
     #   weight: 20
+    - identifier: photos
+      name: Photos
+      url: /photos
+      weight: 100
     - identifier: tags
       name: Tags
       url: /tags/
@@ -55,6 +59,10 @@ params:
   UseHugoToc: true
   comments: false
   math: true
+  homeInfoParams:
+    enabled: true
+    title: Hi there!
+    Content: I am an econ Phd in CUHK.
   profileMode:
     enabled: false
     title: Wei XU
@@ -80,12 +88,14 @@ params:
         url: /tags/
 
   socialIcons: # optional
-    - name: "github"
-      url: "https://github.com/weixu94"
-    - name: "rss"
-      url: "/index.xml/"
     - name: "email"
       url: mailto:weixu1026@gmail.com
+    - name: "github"
+      url: "https://github.com/weixu94"
+    - name: "instagram"
+      url: "https://www.instagram.com/weixu.david/"
+    - name: "rss"
+      url: "/index.xml/"
   
   assets:
     disableHLJS: true

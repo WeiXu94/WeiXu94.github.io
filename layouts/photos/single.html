@@ -6,7 +6,6 @@
 
     .photo-grid {
         column-count: 2;
-        /* 手机默认 2 列 */
         column-gap: 10px;
         margin-top: 1.5rem;
     }
@@ -14,12 +13,46 @@
     .photo-item {
         break-inside: avoid;
         margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 6px;
+        background-color: #e8e8e8;
     }
 
-    .photo-item img {
-        width: 100%;
+    .photo-item a {
         display: block;
+        height: 100%;
+    }
+
+    .photo-placeholder,
+    .photo-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-radius: 6px;
+    }
+
+    .photo-placeholder {
+        filter: blur(12px);
+        transform: scale(1.1);
+        transition: opacity 0.5s ease;
+    }
+
+    .photo-thumb {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .photo-item.img-loaded .photo-placeholder {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .photo-item.img-loaded .photo-thumb {
+        opacity: 1;
     }
 
     /* ===============================
@@ -84,12 +117,41 @@
 <section class="photo-grid">
     {{ $images := resources.Match "photos/*" }}
     {{ range $images }}
-    <figure class="photo-item">
+    {{ $thumb := .Resize "800x webp" }}
+    {{ $tiny := .Resize "20x webp q20" }}
+    <figure class="photo-item" style="aspect-ratio: {{ .Width }} / {{ .Height }};">
         <a href="{{ .RelPermalink }}" target="_blank">
-            <img src="{{ .RelPermalink }}" loading="lazy" decoding="async" alt="" />
+            <img
+                src="data:{{ $tiny.MediaType.Type }};base64,{{ $tiny.Content | base64Encode }}"
+                class="photo-placeholder"
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                src="{{ $thumb.RelPermalink }}"
+                loading="lazy"
+                decoding="async"
+                class="photo-thumb"
+                alt=""
+            />
         </a>
     </figure>
     {{ end }}
 </section>
+
+<script>
+(function () {
+    function markLoaded(img) {
+        img.closest('.photo-item').classList.add('img-loaded');
+    }
+    document.querySelectorAll('.photo-thumb').forEach(function (img) {
+        if (img.complete && img.naturalWidth > 0) {
+            markLoaded(img);
+        } else {
+            img.addEventListener('load', function () { markLoaded(img); });
+        }
+    });
+})();
+</script>
 
 {{ end }}

@@ -24,6 +24,10 @@ menu:
     #   name: Teaching
     #   url: /teaching/
     #   weight: 20
+    - identifier: memos
+      name: 碎碎念
+      url: /memos/
+      weight: 90
     - identifier: photos
       name: Photos
       url: /photos

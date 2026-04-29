@@ -25,7 +25,7 @@ menu:
     #   url: /teaching/
     #   weight: 20
     - identifier: memos
-      name: 碎碎念
+      name: Memos
       url: /memos/
       weight: 90
     - identifier: photos
@@ -131,6 +131,8 @@ frontmatter:
     - date
     - publishDate
     - lastmod
+    - :git
+    - :fileModTime
   lastmod:
     - lastmod
     # - :git

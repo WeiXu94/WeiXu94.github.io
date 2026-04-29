@@ -1,0 +1,109 @@
+{{ define "main" }}
+<style>
+    .memo-header {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .memo-header h1 {
+        font-size: 1.6rem;
+        margin: 0 0 0.3rem;
+    }
+
+    .memo-header p {
+        margin: 0;
+        color: var(--secondary);
+        font-size: 0.9rem;
+    }
+
+    .memo-feed {
+        margin-top: 0;
+    }
+
+    .memo-year-divider {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 2rem 0 0.5rem;
+        color: var(--secondary);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .memo-year-divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--border);
+    }
+
+    .memo-entry {
+        padding: 1.2rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .memo-time {
+        font-size: 0.77rem;
+        color: var(--secondary);
+        letter-spacing: 0.03em;
+        margin-bottom: 0.55rem;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .memo-content {
+        font-size: 0.95rem;
+        line-height: 1.78;
+    }
+
+    .memo-content p {
+        margin: 0 0 0.5em;
+    }
+
+    .memo-content p:last-child {
+        margin-bottom: 0;
+    }
+
+    .memo-content a {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .memo-content blockquote {
+        border-left: 3px solid var(--border);
+        margin: 0.6em 0;
+        padding: 0.2em 0 0.2em 1em;
+        color: var(--secondary);
+        font-style: italic;
+    }
+</style>
+
+<div class="memo-header">
+    <h1>{{ .Title }}</h1>
+    <p>{{ with .Params.description }}{{ . }}{{ else }}零碎的念头，随手记下。{{ end }}</p>
+</div>
+
+<div class="memo-feed">
+    {{ $pages := .Pages.ByDate.Reverse }}
+    {{ $currentYear := 0 }}
+    {{ range $pages }}
+    {{ $year := .Date.Year }}
+    {{ if ne $year $currentYear }}
+    {{ $currentYear = $year }}
+    <div class="memo-year-divider">{{ $year }}</div>
+    {{ end }}
+    <article class="memo-entry">
+        <div class="memo-time">
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .Date.Format "01-02  15:04" }}
+            </time>
+        </div>
+        <div class="memo-content">
+            {{ .Content }}
+        </div>
+    </article>
+    {{ end }}
+</div>
+{{ end }}

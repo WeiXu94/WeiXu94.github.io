@@ -131,8 +131,7 @@ frontmatter:
     - date
     - publishDate
     - lastmod
-    - :git
-    - :fileModTime
+    - :filename
   lastmod:
     - lastmod
     # - :git
